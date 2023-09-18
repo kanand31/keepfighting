@@ -1,0 +1,8 @@
+name: github workflow trigger using issues
+on: issues
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: start when new isue occur
+              run: echo "${{ github }}" 
